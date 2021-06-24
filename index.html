@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./main.js" defer></script>
+
+    <title>🎲 Dice Game</title>
+  </head>
+  <body class="container-sm pt-5 bg-dark text-light">
+    <main>
+      <header class="mb-5">
+        <h1>🎲 Dice Game</h1>
+        <p class="text-info">Need some dice? We got you 😎</p>
+      </header>
+      <section>
+        <form>
+          <div class="mb-3">
+            <label for="dice-count" class="form-label">How many dice?</label>
+            <input type="number"
+              name="dice-count"
+              id="dice-count"
+              itle="dice count"
+              class="form-select"
+            ></input>
+          </div>
+          <div class="mb-3">
+            <label for="dice-type" class="form-label">Dice Type?</label>
+            <select name="dice-type" id="dice-type" title="dice type" class="form-select">
+              <option value="4">D4</option>
+              <option selected value="6">D6</option>
+              <option value="8">D8</option>
+              <option value="10">D10</option>
+              <option value="12">D12</option>
+              <option value="20">D20</option>
+            </select>
+          </div>
+          <button type="button" id="submit" class="btn btn-primary">ROLL</button>
+        </form>
+      </section>
+      <section id="results" id="results"></section>
+    </main>
+  </body>
+</html>
